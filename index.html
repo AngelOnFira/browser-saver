@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div>
+      <h1 id="home">Warn me before leaving the page</h1>
+      <p>
+        I made this site to leave running in all my Firefox windows. If my
+        computer is on, then Firefox should be open. If it's closed, it's
+        because I accidentally hit ❌ when trying to switch tabs, or cause I hit
+        Ctrl-Shift-Q instead of Ctrl-Shift-W ¯\_(ツ)_/¯
+      </p>
+      <p>
+        Are you interested in making this website look better? Please read
+        <a href="http://motherfuckingwebsite.com/">this first</a>. You can then
+        find the repo <a href="http://motherfuckingwebsite.com/">here</a>
+      </p>
+      <button type="button">
+        Click this button to get started. It doesn't do anything, but it focuses
+        you on the window, which is needed for this to work. Alternativly, if
+        you don't fancy buttons, you can click anywhere else on the page. I
+        think. I'm not a frontend developer and I don't intend on clicking
+        anywhere except this button. You're on your own if you choose not to
+        click the button.
+      </button>
+    </div>
+    <script>
+      window.onbeforeunload = function () {
+        return "Do you really mean to close your browser?";
+      };
+    </script>
+  </body>
+</html>
